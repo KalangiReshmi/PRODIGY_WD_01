@@ -1,0 +1,179 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+/* Navigation bar styles */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #004080; /* Navy blue color */
+    color: white;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+nav .logo img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #013468; /* Light blue color */
+    color: white;
+}
+
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #001f3f; /* Navy blue color */
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li a {
+    padding: 10px 20px;
+}
+
+#content {
+    padding-top: 80px; /* to make sure content isn't hidden behind the nav */
+}
+
+section {
+    padding: 20px;
+    margin: 50px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+section h1, section h2 {
+    color: #001f3f; /* Navy blue color */
+}
+
+/* Footer styles */
+footer {
+    background: #001f3f; /* Dark blue footer */
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    color: #007BFF; /* Light blue color */
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007BFF; /* Light blue color */
+}
+
+.footer-section.subscribe form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section.subscribe input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section.subscribe button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #013f81; /* Light blue color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section.subscribe button:hover {
+    background-color: #023265; /* Darker blue color */
+}
+
+.footer-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #013f81; /* Light blue color */
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+    background-color: #023265; /* Darker blue color */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #001f3f;
+    color: white;
+    font-size: 14px;
+}
